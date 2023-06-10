@@ -3,11 +3,9 @@ import { close } from 'ionicons/icons';
 
 export default function OperatorCard({ name }) {
 
-  console.log('name', name);
-
   return (
     <IonChip>
-      <IonLabel className="text-sm">
+      <IonLabel className="text-xs">
         {name}
       </IonLabel>
       <IonIcon icon={close} />

@@ -1,6 +1,7 @@
 import Select from 'react-select';
 import CreatableSelect from 'react-select/creatable';
 import {
+  IonBadge,
   IonChip,
   IonContent, IonHeader, IonIcon, IonItem, IonLabel, IonPage, IonRow,
 } from '@ionic/react';
@@ -43,23 +44,24 @@ export default function SelectOperation() {
 
   return (
     <IonPage>
-      <IonHeader className="ion-no-border pt-3 px-3">
-        <IonRow className="items-center mt-1">
+      <IonHeader className="ion-no-border">
+        <IonRow className="items-center mt-4 mx-3">
           <IonIcon icon={arrowBack} className="text-2xl" />
           <h1 className="ml-4 text-xl grow">
             Rail
           </h1>
         </IonRow>
-        <button
+        {/* <button
           className="bg-blue-500 text-white text-base font-medium rounded-xl 
             absolute right-3 top-3 px-4 py-1">
           Save
-        </button>
-        <IonRow className="mt-6 mb-1 items-center flex-nowrap">
+        </button> */}
+        <IonRow className="mt-5 mx-3 items-center flex-nowrap">
           <CreatableSelect
             className="grow"
+            placeholder="search operators"
             isClearable
-            placeholder="Select operators"
+            menuShouldScrollIntoView={true}
             options={available.map((name) => {
               return { value: name, label: name }
             })}
@@ -73,7 +75,7 @@ export default function SelectOperation() {
             }}
           />
         </IonRow>
-        <IonRow className='mt-3 ml-[-4px]'>
+        <IonRow className='mt-2 ml-2'>
           <IonChip outline={true} className="border">
             <IonLabel className="text-xs">
               Any Ops
@@ -90,9 +92,10 @@ export default function SelectOperation() {
             </IonLabel>
           </IonChip>
         </IonRow>
-        <IonRow className='mt-6 mb-1'>
+        <IonRow className='mt-5 mx-3 pb-2'>
           <IonLabel className="text-sm ml-0">
-            Selected Operators
+            Selected Operators 
+            (16)
           </IonLabel>
         </IonRow>
       </IonHeader>

@@ -22,6 +22,7 @@ import '@ionic/react/css/typography.css';
 /* Theme variables */
 import './theme/variables.css';
 import './theme/tailwind.css';
+import SelectOperation from './pages/SelectOperator';
 
 setupIonicReact();
 
@@ -30,7 +31,7 @@ const App: React.FC = () => (
     <IonReactRouter>
       <IonRouterOutlet>
         <Route exact path="/home">
-          <Home />
+          <SelectOperation />
         </Route>
         <Route exact path="/">
           <Redirect to="/home" />
