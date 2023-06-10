@@ -1,0 +1,7 @@
+{
+  "name": "Strikes Alert",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react-vite"
+}
