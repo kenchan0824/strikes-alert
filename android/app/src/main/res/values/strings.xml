@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Strikes Alert</string>
+    <string name="title_activity_main">Strikes Alert</string>
+    <string name="package_name">com.ancoatsoft.strikes</string>
+    <string name="custom_url_scheme">com.ancoatsoft.strikes</string>
+</resources>
